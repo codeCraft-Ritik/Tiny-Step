@@ -1,0 +1,22 @@
+# TinySteps Robots.txt
+# This file tells search engines which pages to crawl and which to avoid
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /node_modules/
+Disallow: /dist/
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+
+# Specific rules for other crawlers
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://tinysteps.com/sitemap.xml
